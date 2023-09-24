@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "flask-test"
+version = "0.1.0"
+description = ""
+authors = ["muhammad zulfikar <zulfikar@octopus.co.id>"]
+readme = "README.md"
+packages = [{include = "flask_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Flask = "^2.3.3"
+alembic = "^1.12.0"
+flask-sqlalchemy = "^3.1.1"
+pytz = "^2023.3.post1"
+requests = "^2.31.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+exclude = '/migrations/'
+
+[tool.isort]
+profile = "black"
+line_length = 88
+known_third_party = ["flask"]
+skip_glob = ["**/migrations/**"]

@@ -1,0 +1,12 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database file (SQLite, if used)
+*.db
+
+# Alembic
+/alembic.ini
+/migrations/versions/*.pyc
+/migrations/versions/*.py
