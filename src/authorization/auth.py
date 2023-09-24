@@ -1,6 +1,6 @@
 from functools import wraps
 
-from flask import jsonify, request
+from flask import request
 
 from src.exception.generic_exception import UnauthorizedException
 

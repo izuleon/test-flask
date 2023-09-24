@@ -7,7 +7,7 @@ from src.routing.user import user_bp
 
 app = Flask(__name__)
 
-app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///mydatabase.db"
+app.config["SQLALCHEMY_DATABASE_URI"] = "mysql+mysqlconnector://admin:admin@localhost/test_flask"
 with app.app_context():
     init_db(app)
 app.register_error_handler(400, handle_custom_exception)
